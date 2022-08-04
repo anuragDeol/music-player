@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Music Player</title>
+
+    <link rel='stylesheet' href='/assets/style.css'>
+    <script src="https://kit.fontawesome.com/f3fe2a54a1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <i class="fa-solid fa-bars" id="hamburger-icon"></i>
+
+        <div id="ninja-studio-logo">
+            <img src="assets/ninja-studio-logo.png">
+        </div>
+        <span><a href="single_artist_playlist.html" class="color-grey font-style-bahnschrift">Single Artist Playlist</a></span>
+        <span class="font-style-bahnschrift color-grey">
+            Favourites
+        </span>
+        <div id="search-bar-div">
+            <i class="fa-solid fa-magnifying-glass color-grey"></i>
+            <label for="search-bar"></label>
+            <input type="search" id="search-bar" placeholder="Search">    
+            <i class="fa-solid fa-microphone color-grey" id="mic"></i>
+        </div>
+        <div id="bell-icon">
+            <i class="fa-solid fa-bell fa-xl"></i>
+            <div id="dot">
+
+            </div>
+        </div>
+        <div id="user-logo">
+            <img src="assets/dp.jpg">
+        </div>
+    </nav>
+
+    <div id="content">
+        <main>
+            <div id="home-images">
+                <div id="home-image-1-div">
+                    <img src="assets/album-1.jpg">
+                </div>
+                <div id="home-image-2-div">
+                    <img src="assets/album-2.jpg">
+                </div>
+                <div id="home-image-3-div">
+                    <img src="assets/album-3.jpg">
+                </div>
+            </div>
+
+            <div id="latest-release-outer-div">
+                <h3 class="font-style-arial">
+                    Latest Release
+                </h3>
+                <div id="latest-release-inner-div">
+                    <div>
+                        <img src="assets/excuses-img.jpg">
+                        <a href="#footer"><i class="fa-solid fa-play" id="play-button"></i></a>
+                        
+                        
+                        
+                        <div id="latest-release-name">
+                            <span class="bold-name font-style-corbel">Excuses</span>
+                            <span class="light-name font-style-arial color-grey">AUG 11, 2020</span>
+                        </div>
+                        <div id="triple-dot-div">
+                            <i class="fa-solid fa-ellipsis color-grey"></i>
+                            <span class="light-name font-style-arial color-grey">4:44</span>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="assets/pushpa-img.jpg">
+                        <a href="#footer"><i class="fa-solid fa-play" id="play-button"></i></a>
+                        
+                        
+                        
+                        <div id="latest-release-name">
+                            <span class="bold-name font-style-corbel">Srivalli</span>
+                            <span class="light-name font-style-arial color-grey">MAR 14, 2021</span>
+                        </div>
+                        <div id="triple-dot-div">
+                            <i class="fa-solid fa-ellipsis color-grey"></i>
+                            <span class="light-name font-style-arial color-grey">4:44</span>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="assets/album-2.jpg">
+                        <a href="#footer"><i class="fa-solid fa-play" id="play-button"></i></a>
+                        
+                        
+                        
+                        <div id="latest-release-name">
+                            <span class="bold-name font-style-corbel">Onium</span>
+                            <span class="light-name font-style-arial color-grey">OCT 11, 2021</span>
+                        </div>
+                        <div id="triple-dot-div">
+                            <i class="fa-solid fa-ellipsis color-grey"></i>
+                            <span class="light-name font-style-arial color-grey">4:44</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <img src="assets/album-3.jpg">
+                        <a href="#footer"><i class="fa-solid fa-play" id="play-button"></i></a>
+                        
+                        
+                        
+                        <div id="latest-release-name">
+                            <span class="bold-name font-style-corbel">Rise up</span>
+                            <span class="light-name font-style-arial color-grey">FEB 28, 2021</span>
+                        </div>
+                        <div id="triple-dot-div">
+                            <i class="fa-solid fa-ellipsis color-grey"></i>
+                            <span class="light-name font-style-arial color-grey">4:44</span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <div id="popular-artists-outer-div">
+                <h3 class="font-style-arial">Popular Artists</h3>
+                <div id="popular-artists-inner-div" class="font-style-arial font-size-small">
+                    <div>
+                        <img src="assets/artist-1.jpg" class="border-rad-100percent">
+                        
+                        <span>Snoop Dogg</span>
+                    </div>
+                    <div>
+                        <img src="assets/artist-2.jpg" class="border-rad-100percent">
+                        <span>Dr Dre</span>
+                    </div>
+                    
+                    <div>
+                        <img src="assets/artist-3.jpg" class="border-rad-100percent">
+                        <span>Ed Sheeran</span>
+                    </div>
+                    
+                    <div>
+                        <img src="assets/artist-4.jpg" class="border-rad-100percent">
+                        <span>Eminem</span>
+                    </div>
+                    
+                    <div>
+                        <img src="assets/artist-5.jpg" class="border-rad-100percent">
+                        <span>Taylor Swift</span>
+                    </div>
+                    
+                    <div>
+                        <img src="assets/artist-6.jpg" class="border-rad-100percent">
+                        <span>50 Cent</span>
+                    </div>
+                </div>
+                    
+            </div>
+
+            <div id="stations" class="font-style-corbel">
+                <img src="assets/stations-img.png" alt="stations">
+                <div>
+                    <img src="assets/stations-img-1.jpg" alt="love" class="border-rad-100percent">
+                    <span class="font-wt-1000">Love</span>
+                </div>
+                <div>
+                    <img src="assets/stations-img-2.jpg" alt="retro" class="border-rad-100percent">
+                    <span class="font-wt-1000">Retro</span>
+                </div>
+                <div>
+                    <img src="assets/stations-img-3.jpg" alt="chill" class="border-rad-100percent">
+                    <span class="font-wt-1000">Chill</span>
+                </div>
+                <div>
+                    <img src="assets/stations-img-4.jpg" alt="workout" class="border-rad-100percent">
+                    <span class="font-wt-1000">Workout</span>
+                </div>
+                <div>
+                    <img src="assets/stations-img-5.jpg" alt="rock" class="border-rad-100percent">
+                    <span class="font-wt-1000">Rock</span>
+                </div>
+                <div>
+                    <img src="assets/stations-img-6.jpg" alt="pop" class="border-rad-100percent">
+                    <span class="font-wt-1000">Pop</span>
+                </div>
+            </div>
+
+            <div id="genre" class="font-style-corbel">
+                <div>
+                    <img src="assets/genre-img-1.jpg">
+                    <span class="font-wt-1000">Party</span>
+                </div>
+                <div>
+                    <img src="assets/genre-img-2.jpg">
+                    <span class="font-wt-1000">Electronic</span>
+                </div>
+                <div>
+                    <img src="assets/genre-img-3.jpg">
+                    <span class="font-wt-1000">Road Trip</span>
+                </div>
+            </div>
+            
+            <div id="latest-english-outer-div">
+                <h3 class="font-style-arial">Latest English</h3>
+                <div id="latest-english-inner-div">
+                    <div>
+                        <img src="assets/lil-baby.jpg">
+                        <span class="font-style-corbel bold-name">My Turn</span>
+                        <span class="font-style-sans-serif light-name color-grey">AUG 11, 2020</span>
+                    </div>
+
+                    <div>
+                        <img src="assets/gimme-love-img.jpg">
+                        <span class="font-style-corbel bold-name">Gimme</span>
+                        <span class="font-style-sans-serif light-name color-grey">AUG 11, 2017</span>
+                    </div>
+                    <div>
+                        <img src="assets/album.jpg">
+                        <span class="font-style-corbel bold-name">Onism</span>
+                        <span class="font-style-sans-serif light-name color-grey">JAN 11, 208</span>
+                    </div>
+                    <div>
+                        <img src="assets/havana-img.jpg">
+                        <span class="font-style-corbel bold-name">Havana</span>
+                        <span class="font-style-sans-serif light-name color-grey">DEC 21, 2017</span>
+                    </div>
+                    <div>
+                        <img src="assets/one-republic-img.jpg">
+                        <span class="font-style-corbel bold-name">One Republic</span>
+                        <span class="font-style-sans-serif light-name color-grey">AUG 11, 2017</span>
+                    </div>
+                    <div>
+                        <img src="assets/album-2.jpg">
+                        <span class="font-style-corbel bold-name">Pain</span>
+                        <span class="font-style-sans-serif light-name color-grey">SEP 01, 2017</span>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div id="latest-english-outer-div">
+                <h3 class="font-style-arial">Latest Hindi</h3>
+                <div id="latest-english-inner-div">
+                    <div>
+                        <img src="assets/havana-img.jpg">
+                        <span class="font-style-corbel bold-name">Havana</span>
+                        <span class="font-style-sans-serif light-name color-grey">DEC 11, 2017</span>
+                    </div>
+
+                    <div>
+                        <img src="assets/lamborghini-img.jpg">
+                        <span class="font-style-corbel bold-name">Lamborghini</span>
+                        <span class="font-style-sans-serif light-name color-grey">OCT 07, 2019</span>
+                    </div>
+                    <div>
+                        <img src="assets/gta-img.jpg">
+                        <span class="font-style-corbel bold-name">Sanadreas</span>
+                        <span class="font-style-sans-serif light-name color-grey">APR 05, 2003</span>
+                    </div>
+                    <div>
+                        <img src="assets/album-1.jpg">
+                        <span class="font-style-corbel bold-name">Onism</span>
+                        <span class="font-style-sans-serif light-name color-grey">AUG 11, 2017</span>
+                    </div>
+                    <div>
+                        <img src="assets/gimme-love-img.jpg">
+                        <span class="font-style-corbel bold-name">Gimme Love</span>
+                        <span class="font-style-sans-serif light-name color-grey">MAY 19, 2011</span>
+                    </div>
+                    <div>
+                        <img src="assets/lil-baby.jpg">
+                        <span class="font-style-corbel bold-name">My Turn</span>
+                        <span class="font-style-sans-serif light-name color-grey">AUG 11, 2017</span>
+                    </div>
+                </div>
+                
+            </div>
+
+
+        </main>
+
+
+        <aside>
+            <div id="aside-header">
+                <h1 class="font-style-sans-serif">
+                    Queue
+                </h1>
+                <div id="drop-down">
+                    <label for="queue-dropdown" class="font-style-corbel color-green bold-name">Queue</label>
+                    <select id="queue-dropdown">
+                        <option value="">Playlists</option>
+                        <option value="">Favourite Songs</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="aside-content">
+                        <div id="queue-album">
+                            <span class="font-style-sans-serif font-size-0point8rem color-grey">01</span>    
+                            <img src="assets/gimme-love-img.jpg">
+                            <div id="queue-album-name">
+                                <span class="bold-name font-style-monospace font-style-corbel color-white">Mirage</span>
+                                <span class="light-name font-style-monospace font-style-corbel color-grey">Else</span>
+                            </div>
+                                <i class="fa-regular fa-heart color-grey" id="heart-icon"></i>
+                        </div>
+
+                    <div id="queue-album">
+                        <span><img src="assets/song-playing-img.png"></span>    
+                        <img src="assets/lil-baby.jpg">
+                        <div id="queue-album-name">
+                            <span class="bold-name font-style-monospace font-style-corbel color-white">My Turn</span>
+                            <span class="light-name font-style-monospace font-style-corbel color-grey">Lil Baby</span>
+                        </div>
+                        <i class="fa-regular fa-heart color-grey" id="heart-icon"></i>
+                    </div>
+                    <div id="queue-album">
+                        <span class="font-style-sans-serif font-size-0point8rem color-grey">03</span>    
+                        <img src="assets/one-republic-img.jpg">
+                        <div id="queue-album-name">
+                            <span class="bold-name font-style-monospace font-style-corbel color-white">One Rebublic</span>
+                            <span class="light-name font-style-monospace font-style-corbel color-grey">The Weekend</span>
+                        </div>
+                        <i class="fa-regular fa-heart color-grey" id="heart-icon"></i>
+                    </div>
+                    <div id="queue-album">
+                        <span class="font-style-sans-serif font-size-0point8rem color-grey">04</span>    
+                        <img src="assets/excuses-img.jpg">
+                        <div id="queue-album-name">
+                            <span class="bold-name font-style-monospace font-style-corbel color-white">Excuses</span>
+                            <span class="light-name font-style-monospace font-style-corbel color-grey">AP Dhillon</span>
+                        </div>
+                        <i class="fa-regular fa-heart color-grey" id="heart-icon"></i>
+                    </div>
+                    <div id="queue-album">
+                        <span class="font-style-sans-serif font-size-0point8rem color-grey">05</span>    
+                        <img src="assets/pushpa-img.jpg">
+                        <div id="queue-album-name">
+                            <span class="bold-name font-style-monospace font-style-corbel color-white">Srivalli</span>
+                            <span class="light-name font-style-monospace font-style-corbel color-grey">Javed Ali</span>
+                        </div>
+                        <i class="fa-regular fa-heart color-grey" id="heart-icon"></i>
+                    </div>
+                    <div id="queue-album">
+                        <span class="font-style-sans-serif font-size-0point8rem color-grey">06</span>    
+                        <img src="assets/kasmir-files-img.jpg">
+                        <div id="queue-album-name">
+                            <span class="bold-name font-style-monospace font-style-corbel color-white">Hum Dekhenge</span>
+                            <span class="light-name font-style-monospace font-style-corbel color-grey">Swapnil Bandodkar</span>
+                        </div>
+                        <i class="fa-regular fa-heart color-grey" id="heart-icon"></i>
+                    </div>
+                    <div id="queue-album">
+                            <span class="font-style-sans-serif font-size-0point8rem color-grey">01</span>    
+                            <img src="assets/gimme-love-img.jpg">
+                            <div id="queue-album-name">
+                                <span class="bold-name font-style-monospace font-style-corbel color-white">Mirage</span>
+                                <span class="light-name font-style-monospace font-style-corbel color-grey">Else</span>
+                            </div>
+                            <i class="fa-regular fa-heart color-grey" id="heart-icon"></i>
+                        </div>
+
+                    <div id="queue-album">
+                        <span><img src="assets/song-playing-img.png"></span>    
+                        <img src="assets/lil-baby.jpg">
+                        <div id="queue-album-name">
+                            <span class="bold-name font-style-monospace font-style-corbel color-white">My Turn</span>
+                            <span class="light-name font-style-monospace font-style-corbel color-grey">Lil Baby</span>
+                        </div>
+                        <i class="fa-regular fa-heart color-grey" id="heart-icon"></i>
+                    </div>
+                    <div id="queue-album">
+                        <span class="font-style-sans-serif font-size-0point8rem color-grey">03</span>    
+                        <img src="assets/one-republic-img.jpg">
+                        <div id="queue-album-name">
+                            <span class="bold-name font-style-monospace font-style-corbel color-white">One Rebublic</span>
+                            <span class="light-name font-style-monospace font-style-corbel color-grey">The Weekend</span>
+                        </div>
+                            <i class="fa-regular fa-heart color-grey" id="heart-icon"></i>
+                    </div>
+                    <div id="queue-album">
+                        <span class="font-style-sans-serif font-size-0point8rem color-grey">04</span>    
+                        <img src="assets/excuses-img.jpg">
+                        <div id="queue-album-name">
+                            <span class="bold-name font-style-monospace font-style-corbel color-white">Excuses</span>
+                            <span class="light-name font-style-monospace font-style-corbel color-grey">AP Dhillon</span>
+                        </div>
+                            <i class="fa-regular fa-heart color-grey" id="heart-icon"></i>
+                    </div>
+                    <div id="queue-album">
+                        <span class="font-style-sans-serif font-size-0point8rem color-grey">05</span>    
+                        <img src="assets/pushpa-img.jpg">
+                        <div id="queue-album-name">
+                            <span class="bold-name font-style-monospace font-style-corbel color-white">Srivalli</span>
+                            <span class="light-name font-style-monospace font-style-corbel color-grey">Javed Ali</span>
+                        </div>
+                        <i class="fa-regular fa-heart color-grey" id="heart-icon"></i>
+                    </div>
+                    <div id="queue-album">
+                        <span class="font-style-sans-serif font-size-0point8rem color-grey">06</span>    
+                        <img src="assets/kasmir-files-img.jpg">
+                        <div id="queue-album-name">
+                            <span class="bold-name font-style-monospace font-style-corbel color-white">Hum Dekhenge</span>
+                            <span class="light-name font-style-monospace font-style-corbel color-grey">Swapnil Bandodkar</span>
+                        </div>
+                        <i class="fa-regular fa-heart color-grey" id="heart-icon"></i>
+                    </div>
+                    <div id="queue-album">
+                            <span class="font-style-sans-serif font-size-0point8rem color-grey">01</span>    
+                            <img src="assets/gimme-love-img.jpg">
+                            <div id="queue-album-name">
+                                <span class="bold-name font-style-monospace font-style-corbel color-white">Mirage</span>
+                                <span class="light-name font-style-monospace font-style-corbel color-grey">Else</span>
+                            </div>
+                            <i class="fa-regular fa-heart color-grey" id="heart-icon"></i>
+                        </div>
+
+                    <div id="queue-album">
+                        <span><img src="assets/song-playing-img.png"></span>    
+                        <img src="assets/lil-baby.jpg">
+                        <div id="queue-album-name">
+                            <span class="bold-name font-style-monospace font-style-corbel color-white">My Turn</span>
+                            <span class="light-name font-style-monospace font-style-corbel color-grey">Lil Baby</span>
+                        </div>
+                        <i class="fa-regular fa-heart color-grey" id="heart-icon"></i>
+                    </div>
+                    <div id="queue-album">
+                        <span class="font-style-sans-serif font-size-0point8rem color-grey">03</span>    
+                        <img src="assets/one-republic-img.jpg">
+                        <div id="queue-album-name">
+                            <span class="bold-name font-style-monospace font-style-corbel color-white">One Rebublic</span>
+                            <span class="light-name font-style-monospace font-style-corbel color-grey">The Weekend</span>
+                        </div>
+                        <i class="fa-regular fa-heart color-grey" id="heart-icon"></i>
+                    </div>
+                    <div id="queue-album">
+                        <span class="font-style-sans-serif font-size-0point8rem color-grey">04</span>    
+                        <img src="assets/excuses-img.jpg">
+                        <div id="queue-album-name">
+                            <span class="bold-name font-style-monospace font-style-corbel color-white">Excuses</span>
+                            <span class="light-name font-style-monospace font-style-corbel color-grey">AP Dhillon</span>
+                        </div>
+                        <i class="fa-regular fa-heart color-grey" id="heart-icon"></i>
+                    </div>
+                    <div id="queue-album">
+                        <span class="font-style-sans-serif font-size-0point8rem color-grey">05</span>    
+                        <img src="assets/pushpa-img.jpg">
+                        <div id="queue-album-name">
+                            <span class="bold-name font-style-monospace font-style-corbel color-white">Srivalli</span>
+                            <span class="light-name font-style-monospace font-style-corbel color-grey">Javed Ali</span>
+                        </div>
+                        <i class="fa-regular fa-heart color-grey" id="heart-icon"></i>
+                    </div>
+                    <div id="queue-album">
+                        <span class="font-style-sans-serif font-size-0point8rem color-grey">06</span>    
+                        <img src="assets/kasmir-files-img.jpg">
+                        <div id="queue-album-name">
+                            <span class="bold-name font-style-monospace font-style-corbel color-white">Hum Dekhenge</span>
+                            <span class="light-name font-style-monospace font-style-corbel color-grey">Swapnil Bandodkar</span>
+                        </div>
+                        <i class="fa-regular fa-heart color-grey" id="heart-icon"></i>
+                    </div>
+            </div>
+        </aside>
+
+    </div>
+
+    
+    <footer id="footer">
+        
+        <div id="song-info">
+            <img src="assets/gta-img.jpg">
+            <div>
+                <span class="bold-name font-style-corbel">GTA Sanandreas</span>
+                <span class="light-name font-style-bahnschrift color-grey">Michael Hunter</span>
+            </div>
+            <i class="fa-regular fa-heart color-grey"></i>
+            <i class="fa-solid fa-ban color-grey"></i>
+
+            
+            <a href="#">
+                <i class="fa-solid fa-down-left-and-up-right-to-center" id="responsive-minimize-icon"></i>
+            </a>
+        </div>
+        <div id="audio-div">
+            <audio autoplay src="songs/song.mp3">
+                <img src="assets/album-1.jpg">
+            </audio>
+
+            <div id="controls">
+                <i class="fa-solid fa-shuffle fa-1x"></i>
+                <i class="fa-solid fa-backward-step fa-1x"></i>
+                <i class="fa-regular fa-circle-pause fa-2x"></i>
+                <i class="fa-solid fa-forward-step fa-1x"></i>
+                <i class="fa-solid fa-repeat fa-1x"></i>
+            </div>
+            
+            
+            <div id="timeline">
+                <span class="light-name font-style-arial color-grey">1:39</span>
+                <div id="complete-timeline">
+                    <div id="current-timeline">
+                        <div id="timeline-circle">
+                            
+                        </div>
+
+                    </div>
+                </div>
+                <span class="light-name font-style-arial color-grey">4:44</span>
+            </div>
+            <i class="fa-solid fa-pause" id="responsive-play-button"></i>
+            
+        </div>
+        <div id="other-controls" class="color-grey">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-headphones"></i>
+            <i class="fa-solid fa-volume-high"></i>
+            <div id="volume-control-div">
+                <div id="complete-timeline">
+                    <div id="current-timeline">
+                        <div id="timeline-circle">
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <a href="#">
+                <i class="fa-solid fa-angle-down color-grey"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
