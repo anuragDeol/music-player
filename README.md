@@ -1,2 +1,2 @@
 # music-player
-A simple music player front end application based on HTML and CSS.
+Fully responsive beautiful frontend application designed using only HTML and CSS.
